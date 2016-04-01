@@ -1,3 +1,17 @@
+body {
+  background-color: black;
+}
+
+.page-header {
+  color: #F11F1F;
+}
+
 .video {
   margin: 7px;
+  background-color: #B9E8FF;
+  padding: 4px;
+}
+
+a {
+  font-size: 14px;
 }
