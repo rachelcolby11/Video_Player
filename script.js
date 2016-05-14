@@ -1,11 +1,12 @@
 var videoLinks = $('a');
 
-function addThumbnail (link) {
-// Create an IMG element, append the IMG to the given link, and set its "src" to create a thumbnail
-  $(link).append(
-    $('<img/>').attr('src', youtube.generateThumbnailUrl(
-      $(link).attr('href'))
-    )
+// Create an IMG element, append the IMG to each A tag, and set its "src" to create a thumbnail
+function addThumbnail (aTag) {
+// Save each url to link variable
+  var link = $(aTag).attr('href');
+
+  $(aTag).append(
+    $('<img/>').attr('src', youtube.generateThumbnailUrl(link))
   );
 };
 
