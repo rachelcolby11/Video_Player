@@ -18,7 +18,9 @@ function addThumbnailPlayer (aTag) {
     embedVideo.attr('src', youtube.generateEmbedUrl(link)).attr('width', '420').attr('height', '315');
 
     var videoWatcher = $('#video-watcher');
+    videoWatcher.hide()
     videoWatcher.html(embedVideo);
+    videoWatcher.fadeIn(600);
   });
 };
 
