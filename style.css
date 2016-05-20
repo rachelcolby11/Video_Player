@@ -17,3 +17,9 @@ body {
 a {
   font-size: 14px;
 }
+
+#video-watcher {
+  position: relative;
+  margin-top: 20px;
+  margin-left: -8px;
+}
